@@ -1,0 +1,85 @@
+<html>
+    <head>
+    
+        <style>
+            .bluebox{
+                background-color: #435F9C;
+                color: white;
+                width: 200px;
+                height: 200px;
+                font-size: 300%;
+                position: relative;
+/*                first give name to your animation and then the duration. */
+                -webkit-animation: myanimation 3s;
+                
+            }
+/*
+            @-webkit-keyframes myanimation{
+                here we are defining that the animation we created will go FROM which style TO which style..
+                from{background: #47faf4}
+                to{background: #435F9C}
+            }
+*/
+            @-webkit-keyframes myanimation{
+/*                how much percent of 3s does this state appear can be decided manually by writing the percentage before the starting bracket
+                  for the top and left attributes to work the position must be relative...*/
+                0%{background: #435F9C;left: 0px;top: 0px}
+                25%{background: yellow;left: 200px;top: 0px}
+                50%{background: red;left: 200px;top: 200px}
+                75%{background: green;left: 0px;top: 200px}
+                100%{background: #435F9C;left: 0px;top: 0px}
+
+                
+            }
+          
+            
+            
+            .yellowbox{
+                background-color: #000000;
+                color: #CECECE;
+                width: auto;
+                height: auto;
+                font-size: 300%;
+            }
+            
+            .greenbox{
+                background-color: #18c10f;
+                color: yellow;
+                width: 200px;
+                height: 200px;
+                font-size: 300%;
+                transition: width 0.5s , height 0.5s,
+                transform 1s;
+            }
+            
+           
+        
+        </style>
+    
+    </head>
+    <body>
+        <div class="bluebox">
+        <p>
+        Facebook    
+        </p>
+            <p><a href="http://www.facebook.com">visit link</a></p>
+        </div>
+        
+        <div class="yellowbox">
+        <p>
+        Apple    
+        </p>
+            <p><a href="http://www.apple.com">visit link</a></p>
+            
+        </div>
+        
+        <div class="greenbox">
+        <p>
+        Microsoft    
+        </p>
+            <p><a href="http://www.microsoft.com">visit link</a></p>
+        </div>
+        
+
+    </body>
+</html>
