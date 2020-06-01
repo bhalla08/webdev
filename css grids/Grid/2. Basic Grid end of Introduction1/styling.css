@@ -20,7 +20,8 @@
     display: grid;
 /*    rows height*/
     grid-template-rows: 1fr 1fr 1fr 1fr;
-/*    columns width*/
+/*    columns width /////// auto fill will make the browser fit as many columns as possible*/
+/*    auto fit will fit all items on the screen and occupy all the space that is remaining*/
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 /*    gutter*/
     grid-gap: 5px;
