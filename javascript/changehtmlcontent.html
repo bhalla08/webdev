@@ -1,0 +1,70 @@
+<html>
+    <head>
+    <title>change html content</title>
+        <style>
+            .bluebox{
+                background-color: #435F9C;
+                color: white;
+                width: auto;
+                height: "108px";
+                font-size: 300%;
+            }
+
+
+            .yellowbox{
+                background-color: #000000;
+                color: #CECECE;
+                width: auto;
+                height: "108px";
+                font-size: 300%;
+            }
+
+            .greenbox{
+                background-color: #18c10f;
+                color: yellow;
+                width: auto;
+                height: "108px";
+                font-size: 300%;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="bluebox" id="facebook">
+        <p>
+        Facebook is great...
+        </p>
+        </div>
+
+        <div class="yellowbox" id="apple">
+        <p>
+        Apple
+        </p>
+
+        </div>
+
+        <div class="greenbox">
+        <p>
+        Microsoft
+        </p>
+        </div>
+
+        <button id="button1">change facebook content</button>
+
+        <button id="button2">change apple content </button>
+
+
+
+        <script>
+
+         document.getElementById("button1").onclick=function(){
+            document.getElementById("facebook").innerHTML="<p>Facebook.</p>";
+        }
+
+         document.getElementById("button2").ondblclick=function(){
+            document.getElementById("apple").innerHTML="<ul> <li>AUDI</li> <li>BMW</li> <li>MERCEDES</li> </ul>";
+        }
+        </script>
+    </body>
+</html>
