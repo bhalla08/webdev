@@ -1,0 +1,32 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+        <title>While Loop</title>
+    </head>
+    <body>
+        <p id="myParagraph">javascript</p>
+        <button onclick="initiateGame()">Start</button>
+        <p id="balance">Current Balance: $1000 </p>
+        <script>
+            var i = 0;
+            while(i<5){
+                document.getElementById("myParagraph").innerHTML += "<br />" +i;
+                i++;
+            }
+
+    function initiateGame(){
+            var balance = 1000;
+            var itemsBrought = 0;
+            while(balance>0)
+                {
+                    var itemPrice = Math.floor(Math.random()*100);
+                    if (itemPrice <= balance)
+                        itemsBrought +=1;
+                        balance -= itemPrice;
+                    document.getElementById("balance").innerHTML += "<p> Purchase amount: $"+ itemPrice + ".New Balance: $"+balance+ ". </p>"
+                }
+        document.getElementById("balance").innerHTML+="<p> You bought: " + itemsBrought+ "items.</p>";
+    }
+        </script>
+    </body>
+</html>
